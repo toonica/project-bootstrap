@@ -38,11 +38,11 @@
         }
     }
     //if there is an error...
-    else
-    {
-        //set that to be the returned message
-        echo 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
+        else
+        {
+            //set that to be the returned message
+            echo 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
 
-    }
+        }
 
     }
