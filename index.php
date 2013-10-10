@@ -41,7 +41,7 @@
         else
         {
             //set that to be the returned message
-            echo 'Ooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
+            echo 'Oooops!  Your upload triggered the following error:  '.$_FILES['photo']['error'];
 
         }
 
