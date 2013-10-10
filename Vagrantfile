@@ -8,7 +8,7 @@
 ###############################################################
 
 #  Required at least Vagrant v. >=1.2.0
-Vagrant.require_plugin('vagrant-hostsupdater')
+#Vagrant.require_plugin('vagrant-hostsupdater')
 
 Vagrant.configure("2") do |config|
   config.vm.box = "wheezy"
@@ -17,8 +17,8 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "10.10.21.10"
     config.ssh.forward_agent = true
 
-    config.vm.hostname = "nfqakademija.dev"
-    config.hostsupdater.aliases = ["nfqakademija.dev"]
+    #config.vm.hostname = "nfqakademija.dev"
+    #config.hostsupdater.aliases = ["nfqakademija.dev"]
 
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
